@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The story of The Inkwell Cafe, our values, and our opening hours.">
+  <title>About | The Inkwell Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="has-sound-bar">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="The Inkwell Cafe logo: a pixel-art blue ink bottle with a golden quill">
+        <span>The Inkwell Cafe<small>open late, rain or shine</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="about-title">
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">our story</p>
+          <h1 id="about-title">Where stories steep</h1>
+          <p class="lead">The Inkwell began with one rainy night, one stubborn deadline, and nowhere warm to write.</p>
+          <p>A few students decided campus needed a place that stayed open late, kept the lights low, and treated a laptop and a library book like the best of friends. So they did in a whim.</p>
+          <p>Today the Inkwell is still that same quiet hideout: strong coffee, soft music, and a window that always seems to be raining just enough.</p>
+        </div>
+
+        <figure>
+          <div class="figure-frame">
+            <img src="images/reading-nook.svg" width="640" height="360" alt="Art reading nook with a tall bookshelf, a red armchair, a side table with a mug and a book.">
+          </div>
+          <figcaption>The reading nook: a red armchair and a lamp that never goes out.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="values-title">
+      <div class="wrap">
+        <h2 id="values-title">What we hold dear</h2>
+
+        <div class="card-grid card-grid--3">
+          <article class="card">
+            <h3>Slow is welcome</h3>
+            <p>Order one cup and stay for hours. Nobody here is counting, and refills are always friendly.</p>
+          </article>
+          <article class="card">
+            <h3>Share the story</h3>
+            <p>Our shelf runs on trust. Borrow a book, return it when you can, or leave one for the next reader.</p>
+          </article>
+          <article class="card">
+            <h3>Gentle on the planet</h3>
+            <p>Ceramic mugs for dine-in, a discount for tumblers, and grounds composted for the campus garden.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="visit-title">
+      <div class="wrap split">
+        <div>
+          <h2 id="visit-title">Find your seat</h2>
+          <p>We are on the ground floor of the Student Center, behind the courtyard. Follow the amber glow of the lamps and you will find us.</p>
+          <div class="btn-row">
+            <a class="btn" href="contact.html">Reserve a table</a>
+            <a class="btn btn--ghost" href="menu.html">Browse the menu</a>
+          </div>
+        </div>
+
+        <table class="hours">
+          <caption>Opening hours</caption>
+          <thead>
+            <tr><th scope="col">Day</th><th scope="col">Hours</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Monday to Friday</th><td>10:00 AM &ndash; 11:00 PM</td></tr>
+            <tr><th scope="row">Saturday</th><td>9:00 AM &ndash; 11:00 PM</td></tr>
+            <tr><th scope="row">Sunday</th><td>2:00 PM &ndash; 9:00 PM</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 The Inkwell Cafe &middot; ITC-101 Mini project</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <aside class="sound-bar" aria-label="Background music player">
+    <div class="sound-info">
+      <span class="sound-title">&#9835; Rainy night loop</span>
+      <span class="sound-caption">Caption: gentle rain and slow piano, playing on repeat</span>
+    </div>
+    <audio id="bgm" controls loop preload="auto">
+      <source src="media/rainy-night-loop.wav" type="audio/wav">
+      Your browser does not support the audio element. The file is rainy-night-loop.wav in the media folder.
+    </audio>
+  </aside>
+
+  <script src="js/audio.js" defer></script>
+</body>
+</html>

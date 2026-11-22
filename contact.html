@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact The Inkwell Cafe to reserve a table, plan a group order, or share feedback.">
+  <title>Contact | The Inkwell Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="has-sound-bar">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="The Inkwell Cafe logo: a pixel-art blue ink bottle with a golden quill">
+        <span>The Inkwell Cafe<small>open late, rain or shine</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="contact-title">
+      <div class="wrap">
+        <p class="eyebrow">leave us a note</p>
+        <h1 id="contact-title">Write to the Inkwell</h1>
+        <p class="lead">Want to reserve a writing table, plan a group order, or recommend a book for our shelf? Send us a message and a barista will write back.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="form-title">
+      <div class="wrap split split--wide-left">
+        <article class="form-panel">
+          <h2 id="form-title">Send a message</h2>
+
+          <form class="form" action="#" method="post">
+            <div class="field">
+              <label for="name">Your name <small>(required)</small></label>
+              <input type="text" id="name" name="name" placeholder="Juan dela Cruz" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+              <label for="email">Email address <small>(required)</small></label>
+              <input type="email" id="email" name="email" placeholder="you@school.edu" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="reason">What can we help with?</label>
+              <select id="reason" name="reason">
+                <option value="reserve">Reserve a writing table</option>
+                <option value="group">Plan a group order</option>
+                <option value="book">Recommend a book for the shelf</option>
+                <option value="feedback">Share feedback</option>
+                <option value="lost">Lost &amp; found</option>
+                <option value="other">Something else</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Your message</label>
+              <textarea id="message" name="message" placeholder="Tell us your story..."></textarea>
+            </div>
+
+            <button class="btn" type="submit">Send message</button>
+            <p class="form-note">We only use your details to reply to this message.</p>
+          </form>
+        </article>
+
+        <aside aria-labelledby="visit-title">
+          <div class="dialog">
+            <h2 id="visit-title">Find us</h2>
+            <ul class="dialog-list">
+              <li><strong>LOCATION</strong><span>Ground Floor, SV building</span></li>
+              <li><strong>HOURS</strong><span>Mon&ndash;Fri 10 AM&ndash;11 PM<br>Sat 9 AM&ndash;11 PM<br>Sun 2 PM&ndash;9 PM</span></li>
+              <li><strong>EMAIL</strong><span><a href="mailto:hello@inkwellcafe.example">hello@inkwellcafe.example</a></span></li>
+              <li><strong>REPLY TIME</strong><span>Within two school days</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 The Inkwell Cafe &middot; ITC-101 Mini project</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <aside class="sound-bar" aria-label="Background music player">
+    <div class="sound-info">
+      <span class="sound-title">&#9835; Rainy night loop</span>
+      <span class="sound-caption">Caption: gentle rain and slow piano, playing on repeat</span>
+    </div>
+    <audio id="bgm" controls loop preload="auto">
+      <source src="media/rainy-night-loop.wav" type="audio/wav">
+      Your browser does not support the audio element. The file is rainy-night-loop.wav in the media folder.
+    </audio>
+  </aside>
+
+  <script src="js/audio.js" defer></script>
+</body>
+</html>
