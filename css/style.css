@@ -1072,3 +1072,72 @@ figcaption::before {
   height: 16px;
   background: var(--text);
   border: 3px solid var(--ink);
+  border-radius: 0;
+  box-shadow: 2px 2px 0 var(--lamp-dark);
+}
+
+.pp-seek:hover::-webkit-slider-thumb,
+.pp-vol:hover::-webkit-slider-thumb {
+  background: var(--lamp);
+}
+
+.pp-seek:hover::-moz-range-thumb,
+.pp-vol:hover::-moz-range-thumb {
+  background: var(--lamp);
+}
+
+.pp-seek:focus-visible,
+.pp-vol:focus-visible,
+.pp-btn:focus-visible {
+  outline: 4px solid var(--leaf);
+  outline-offset: 3px;
+}
+
+/* small screens: hide durations + volume so the seek bar has room */
+@media (max-width: 639px) {
+  .pp-dur,
+  .pp-vol {
+    display: none;
+  }
+}
+
+/* inside the fixed sound bar */
+.sound-bar .pixel-player {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+}
+
+@media (min-width: 640px) {
+  .sound-bar .pixel-player {
+    width: 460px;
+  }
+}
+
+/* ==========================================================
+   NATIVE AUDIO: hide the download button (Chrome / Edge)
+   Only matters if any <audio controls> is still on the page.
+   ========================================================== */
+audio::-internal-media-controls-download-button {
+  display: none;
+}
+
+audio::-webkit-media-controls-enclosure {
+  overflow: hidden;
+}
+
+audio::-webkit-media-controls-panel {
+  width: calc(100% + 30px); /* pushes the 3-dot menu out of view */
+}
+
+/* ---------- Accessibility: reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
